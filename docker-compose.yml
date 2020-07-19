@@ -1,0 +1,28 @@
+version: '3.1'
+services:
+
+  front:
+    container_name: front-provider
+    image: rogerionsouza/tech-challenge:1.0
+    ports:
+      - "3000:3000"
+
+  backend:
+    container_name: back-provider
+    image: rogerionsouza/tech-challenge:1.0
+    ports:
+      - "3001:3001"
+  
+  db:
+    container_name: database-provider
+    restart: always
+    image: rogerionsouza/tech-challenge:1.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=MyPass
+    expose:
+      - "3306"
+    volumes:
+      - database_provider:/var/lib/mysql
+
+volumes:
+  database_provider: {}
