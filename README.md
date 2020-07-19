@@ -1,6 +1,6 @@
 # Tech Challenge 
 
-Está é uma demonstração de orquestração de container local utilizando o Docker em uma máquina auto-provisionada com o Vagrant, a aplicação está em em NodeJS contendo um frontend, um backend e um banco MySQL.
+Está é uma demonstração de orquestração de container local utilizando o Docker em uma máquina auto-provisionada com o Vagrant, a aplicação está em NodeJS contendo um frontend, um backend e um banco MySQL com conexão por serviço.
 
 
 ## Requisito
