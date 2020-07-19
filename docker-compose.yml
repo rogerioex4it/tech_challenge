@@ -9,14 +9,14 @@ services:
 
   backend:
     container_name: back-provider
-    image: rogerionsouza/tech-challenge:1.0
+    image: rogerionsouza/tech-challenge:2.0
     ports:
       - "3001:3001"
   
   db:
     container_name: database-provider
     restart: always
-    image: rogerionsouza/tech-challenge:1.0
+    image: rogerionsouza/tech-challenge:3.0
     environment:
       - MYSQL_ROOT_PASSWORD=MyPass
     expose:
