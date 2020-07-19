@@ -10,6 +10,8 @@ services:
   backend:
     container_name: back-provider
     image: rogerionsouza/tech-challenge:2.0
+    depends_on:
+      - db
     ports:
       - "3001:3001"
   
